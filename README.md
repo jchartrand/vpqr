@@ -1,3 +1,6 @@
+# A customization of @digitalbazaar/vpqr, to allow testing gifs.  Not meant to be used publicly.  
+
+
 # Verifiable Presentations to QR Code JS Lib _(@digitalbazaar/vpqr)_
 
 [![Node.js CI](https://github.com/digitalbazaar/vpqr/workflows/Node.js%20CI/badge.svg)](https://github.com/digitalbazaar/vpqr/actions?query=workflow%3A%22Node.js+CI%22)
