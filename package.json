@@ -1,20 +1,15 @@
 {
-  "name": "@digitalbazaar/vpqr",
+  "name": "@jchartrand/vpqr",
   "version": "2.1.1-0",
-  "description": "An isomorphic JS (for Node.js and browser) library that takes a Verifiable Presentation, compresses it via CBOR-LD, and turns it into a QR Code.",
-  "homepage": "https://github.com/digitalbazaar/vpqr",
+  "description": "Custom modification of digitalbazaar/vpqr for testing with gifs.",
+  "homepage": "https://github.com/jchartrand/vpqr",
   "author": {
     "name": "Digital Bazaar, Inc.",
-    "email": "support@digitalbazaar.com",
     "url": "https://digitalbazaar.com/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/digitalbazaar/vpqr"
-  },
-  "bugs": {
-    "url": "https://github.com/digitalbazaar/vpqr/issues",
-    "email": "support@digitalbazaar.com"
+    "url": "https://github.com/jchartrand/vpqr"
   },
   "license": "BSD-3-Clause",
   "files": [
@@ -82,10 +77,6 @@
   "engines": {
     "node": ">=12"
   },
-  "keywords": [
-    "Decentralized",
-    "Linked Data"
-  ],
   "scripts": {
     "test": "npm run lint && npm run test-node && npm run test-karma",
     "test-node": "cross-env NODE_ENV=test mocha -r esm --preserve-symlinks -t 10000 test/*.spec.js",
