@@ -28,7 +28,8 @@
     "base32-decode": "^1.0.0",
     "base32-encode": "^1.2.0",
     "cit-context": "^2.0.0",
-    "esm": "^3.2.25"
+    "esm": "^3.2.25",
+    "qrcode": "^1.4.4"
   },
   "devDependencies": {
     "@babel/core": "^7.13.8",

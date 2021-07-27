@@ -11,7 +11,7 @@ import vcjs from 'vc-js';
 import {toQrCode, fromQrCode} from '..';
 
 import {
-  exampleVp, exampleImageDataUrl, exampleQrCodeData
+  exampleVp, exampleImageDataUrl, exampleQrCodeData, exampleImageDataUrlAsPng
 } from './mock-data.js';
 
 import {documentLoader} from './loader.js';
@@ -26,6 +26,19 @@ describe('vpqr', () => {
       expect(imageDataUrl).to.equal(exampleImageDataUrl);
       expect(version).to.be.a('number');
       expect(version).to.equal(13);
+    });
+  });
+
+  describe('toQrCode as png', () => {
+    it('convert VP to an image data url as png', async () => {
+      const {
+        payload, imageDataUrl/*, encodedCborld, rawCborldBytes*/
+      } = await toQrCode({vp: exampleVp, documentLoader, imageType: 'png'});
+      expect(payload).to.equal(exampleQrCodeData);
+      //console.log('-----------------\n');
+      //console.log(imageDataUrl);
+      //console.log('-----------------\n');
+      expect(imageDataUrl).to.equal(exampleImageDataUrlAsPng);
     });
   });
 
